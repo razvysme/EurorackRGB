@@ -15,7 +15,7 @@ int RGB[3]; // used for HSV to RGB conversion
 
 void setup() { 
   Serial.begin(9600);
-
+  
   pinMode(redPin, OUTPUT); 
   pinMode(greenPin, OUTPUT);
   pinMode(bluePin, OUTPUT);
@@ -40,8 +40,6 @@ void loop() {
   analogWrite(redPin,RGB[0]);
   analogWrite(greenPin,RGB[1]);
   analogWrite(bluePin,RGB[2]);
-
-
 
  /* 
   Serial.print("Hue is: ");
